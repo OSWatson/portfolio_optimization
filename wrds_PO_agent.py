@@ -153,7 +153,7 @@ def plot_correlation_heatmap(returns_df):
 def create_agent(df, returns_df, expected_returns, cov_matrix):
     try:
         print("Creating LangChain agent...")
-        llm = OpenAI(temperature=0, openai_api_key="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")  # Replace with your actual API key
+        llm = OpenAI(temperature=0, openai_api_key="")  # Replace with your actual API key
 
         def optimized_weights():
             weights = optimize_portfolio(expected_returns, cov_matrix)
